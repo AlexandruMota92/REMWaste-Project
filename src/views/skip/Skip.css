@@ -1,0 +1,16 @@
+.skip-card {
+    padding: 0;
+}
+
+.skip-selector__container {
+    display: flex;
+    gap: 2rem;
+}
+
+.spinner {
+    margin: 10rem auto;
+}
+
+.proceed {
+    margin-top: 5rem;
+}
