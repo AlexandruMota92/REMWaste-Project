@@ -59,7 +59,6 @@ const Skip = props => {
 
     return (
         <>
-            {console.log(skipData)}
             <h1>Choose your skip size</h1>
             <h2>Select the skip size that best suits your needs</h2>
             <div className="skip-selector__container">

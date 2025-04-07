@@ -14,7 +14,7 @@ const CustomCard = props => {
       <Box sx={{
         display: 'flex', flexDirection: 'column', backgroundColor: '#121212', color: '#fff',
       }}>
-        <CardContent sx={{ flex: '1 0 auto' }}>
+        <CardContent sx={{ minWidth: '20rem', flex: '1 0 auto' }}>
           <Typography component="div" variant="h4" sx={{ fontWeight: '700' }}>
             {`${props.skipSize} Yards Skip`}
           </Typography>
@@ -30,7 +30,7 @@ const CustomCard = props => {
           >
             {`${props.skipHirePeriod} day hire period`}
           </Typography>
-          {!props.isPrivatePropertyDependent && <Alert sx={{ marginTop: '1rem' }} severity="warning">Private Property Only.</Alert>}
+          {!props.isPrivatePropertyDependent ? <Alert sx={{ marginTop: '1rem' }} severity="warning">Private Property Only.</Alert> : <Box sx={{ height: '4rem' }}></Box>}
           <Typography
             component="div"
             variant="h4"
@@ -40,7 +40,7 @@ const CustomCard = props => {
               component="span"
               sx={{ color: '#9ca3af' }}
             >
-              {`per week before VAT`}
+              {`per week`}
             </Typography>
           </Typography>
         </CardContent>

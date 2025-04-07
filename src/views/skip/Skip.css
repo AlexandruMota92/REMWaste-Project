@@ -4,7 +4,13 @@
 
 .skip-selector__container {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
+    justify-content: center;
+}
+
+.skip-period__dropdown {
+    margin-top: 0.5rem
 }
 
 .spinner {
@@ -13,4 +19,17 @@
 
 .proceed {
     margin-top: 5rem;
+}
+
+@media (max-width: 1165px) {
+    .skip-parameters {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    .skip-period__dropdown {
+        margin-top: 0;
+    }
 }
