@@ -21,6 +21,29 @@
     margin-top: 5rem;
 }
 
+.skip-selector__title {
+    margin: .5rem;
+}
+
+.skip-selector__subtitle {
+    font-weight: 100;
+    margin: .5rem;
+    margin-bottom: 2.2rem;
+}
+
+.skip-selector__submit {
+    color: #fff;
+    height: 3rem;
+    width: 15rem;
+    border-radius: 75px;
+
+}
+
+.skip-selector__submit-container {
+    border-radius: 75px;
+    margin-top: 2.2rem;
+}
+
 @media (max-width: 1165px) {
     .skip-parameters {
         display: flex;

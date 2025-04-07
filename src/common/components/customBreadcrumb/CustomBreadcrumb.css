@@ -1,0 +1,28 @@
+.wizard-breadcrumb__list {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.breadcrumb {
+    margin: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs-trail__list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.breadcrumbs-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* .wizard-breadcrumb__list li {
+    padding-left: 
+} */

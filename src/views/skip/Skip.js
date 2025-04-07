@@ -22,6 +22,11 @@ const Skip = props => {
         }))
     }
 
+    const handleFinishSelection = () => {
+        //send this object on submit
+        console.log(selectedSkipParameters);
+    }
+
     useEffect(() => {
         const fetchSkipData = async () => {
             try {
@@ -44,7 +49,7 @@ const Skip = props => {
 
                 setSkipFilters({ skipSize: [...skipSizeSet]?.[0], skipHiringPeriod: [...hirePeriodSet]?.[0] })
             } catch (err) {
-                // handled in middleware
+                // handled in hook
             }
         };
 
@@ -59,8 +64,8 @@ const Skip = props => {
 
     return (
         <>
-            <h1>Choose your skip size</h1>
-            <h2>Select the skip size that best suits your needs</h2>
+            <h2 className="skip-selector__title">Choose your skip size</h2>
+            <h3 className="skip-selector__subtitle">Select the skip size that best suits your needs</h3>
             <div className="skip-selector__container">
                 <div className="skip-parameters">
                     <div className="skip-size__dropdown">
@@ -76,9 +81,15 @@ const Skip = props => {
                     </CustomCard>
                 </div>
             </div>
-            <div className="proceed">
-                <Button sx={{ color: '#fff', height: '3rem', width: '15rem' }} variant="contained">Finish Selection</Button>
-            </div>
+            <Button sx={{
+                backgroundColor: '#0037c1',
+                color: '#fff',
+                height: '3rem',
+                width: '15rem',
+                borderRadius: '5px',
+                marginTop: '2.2rem',
+                '&:hover': { backgroundColor: '#0000c1' }
+            }} variant="contained" onClick={handleFinishSelection}>Finish Selection</Button>
         </>
     )
 }
